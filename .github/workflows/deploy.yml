@@ -1,0 +1,47 @@
+name: Deploy ATR Web Page
+
+on:
+  push:
+    branches: 
+      - main
+      - develop
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+        
+    steps:  
+      - name: Get code and checkout
+        uses: actions/checkout@v4
+      
+      - name: Set deployment path
+        id: set_path
+        run: |
+          branch="${GITHUB_REF##*/}"
+          if [[ "$branch" == "main" ]]; then
+            echo "DEPLOY_PATH=/home/cenecsa-admin" >> $GITHUB_ENV
+          elif [[ "$branch" == "develop" ]]; then
+            echo "DEPLOY_PATH=/var/www/html/aturitmo-web-page" >> $GITHUB_ENV
+          fi
+      
+      - name: Deploying project on the server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          source: "./*"
+          target: ${{ env.DEPLOY_PATH }}
+          strip_components: 0
+
+      - name: Confirmation of successful deployment
+        run: |
+          branch="${GITHUB_REF##*/}"
+          if [[ "$branch" == "develop" ]]; then
+            echo "✅ Deployment in QA environment completed successfully!"
+          elif [[ "$branch" == "main" ]]; then
+            echo "✅ Deployment in Production environment completed successfully!"
+          else
+            echo "✅ Deployment on branch '$branch' completed successfully!"
+          fi
