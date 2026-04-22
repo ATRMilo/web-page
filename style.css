@@ -326,8 +326,10 @@ blockquote {
 }
 
 .btn.btn-bordered-grad:before {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    /*background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;*/
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
     border-radius: 100px;
     content: "";
     height: calc(100% + 4px);
@@ -1000,8 +1002,8 @@ PADDING LEFT
 .blue-grad-bg {
     /*background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
     background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;*/
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
 }
 
 .blue-grad-bg-2 {
@@ -1102,7 +1104,7 @@ PADDING LEFT
 }
 
 .section-heading h2:after {
-    background: rgba(0, 0, 0, 0) url("img/others/line-shape.png") no-repeat scroll 0 0;
+    /*background: rgba(0, 0, 0, 0) url("img/others/line-shape.png") no-repeat scroll 0 0;*/
     content: "";
     height: 11px;
     left: 0;
@@ -2216,8 +2218,10 @@ header {
 }
 
 .pricing-footer:after {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    /*background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;*/
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
     content: "";
     height: 1px;
     left: 0;
@@ -2228,9 +2232,10 @@ header {
 }
 
 .pricing-footer:before {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    content: "";
+    /*background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;*/
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
     height: 100%;
     left: 0;
     opacity: 0;
@@ -2254,10 +2259,9 @@ header {
 }
 
 .single-price-table:hover .price-value {
-    color: #00c9fd;
+    color: #000;
 }
 
-.single-price-table:hover .pricing-footer p,
 .single-price-table:hover .pricing-footer a {
     color: #fff;
 }
