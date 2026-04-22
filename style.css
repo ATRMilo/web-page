@@ -3587,7 +3587,7 @@ header {
 }
 
 #pricing-table-area.home-style-3:before {
-    background: rgba(0, 0, 0, 0) url("img/bg/2.jpg") no-repeat scroll center center / cover;
+    /*background: rgba(0, 0, 0, 0) url("img/bg/2.jpg") no-repeat scroll center center / cover;*/
 }
 
 #app-download-area.home-style-3 {
