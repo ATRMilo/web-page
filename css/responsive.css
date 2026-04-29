@@ -677,9 +677,9 @@
         padding: 0 45px;
     }
     #footer-area {
-        background-color: #2b323f;
+        background-color: #8B0000;
         padding-bottom: 40px;
-        padding-top: 21em;
+        /*padding-top: 21em;*/
     }
     .section-heading {
         width: 70%;

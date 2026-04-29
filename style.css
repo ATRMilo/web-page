@@ -1448,8 +1448,8 @@ header {
 }
 
 .single-feature:after {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 2px;
@@ -2276,7 +2276,7 @@ header {
 }
 
 .faq-content-wrapper:before {
-    background-color: #70798f;
+    background-color: transparent;
     content: "";
     height: calc(100% - 60px);
     left: -40px;
@@ -2286,8 +2286,8 @@ header {
 }
 
 .panel-heading:before {
-    background-color: #fff;
-    border: 1px solid;
+    background-color: transparent;
+    /*border: 1px solid;*/
     border-radius: 50px;
     content: "";
     height: 15px;
@@ -2316,8 +2316,8 @@ header {
 }
 
 .panel:before {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
     content: "";
     height: 100%;
     left: -2px;
@@ -2363,9 +2363,9 @@ header {
 }
 
 .panel-title a:after {
-    border: 1px solid #00c9fd;
+    border: 1px solid #8B0000;
     border-radius: 50px;
-    color: #00c9fd;
+    color: #8B0000;
     content: "";
     font-family: Icofont;
     font-size: 12px;
@@ -2736,9 +2736,9 @@ header {
 ===================================== */
 
 #footer-area {
-    background-color: #2b323f;
+    background-color: #8B0000;
     padding-bottom: 45px;
-    padding-top: 23em;
+    /*padding-top: 23em;*/
 }
 
 #footer-area .social {
