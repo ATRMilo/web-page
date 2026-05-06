@@ -1067,8 +1067,8 @@ PADDING LEFT
 }
 
 .overlay-grad-one:after {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
 }
 
 .overlay-grad-three {
@@ -1711,7 +1711,7 @@ header {
 }
 
 #promo-video-area .overlay-grad-one:after {
-    z-index: 1;
+    /*z-index: 1;*/
 }
 
 #promo-video-area .overlay-grad-two:after {
@@ -1993,8 +1993,8 @@ header {
 }
 
 .social a:after {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    /*background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;*/
     border-radius: 100px;
     content: "";
     height: 100%;

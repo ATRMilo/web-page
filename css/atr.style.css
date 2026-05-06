@@ -84,3 +84,37 @@
 .app-features-area .feature-details .media-body .text-justify {
     text-align: justify;
 }
+
+/**
+ Footer styles
+**/
+.social li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: #F9F9F9;
+    color: #0A0A0A;
+    border-radius: 50%;
+    font-size: 18px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.social li a:hover {
+    background: #0A0A0A;
+    color: #F9F9F9;
+    transform: translateY(-3px);
+}
+
+.social li a {
+    background: transparent;
+    color: #F9F9F9;
+    border: 2px solid #F9F9F9;
+}
+
+.social li a:hover {
+    background: #F9F9F9;
+    color: #8B0000;
+}
