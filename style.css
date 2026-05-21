@@ -326,8 +326,10 @@ blockquote {
 }
 
 .btn.btn-bordered-grad:before {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    /*background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;*/
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
     border-radius: 100px;
     content: "";
     height: calc(100% + 4px);
@@ -1000,13 +1002,13 @@ PADDING LEFT
 .blue-grad-bg {
     /*background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
     background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;*/
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
 }
 
 .blue-grad-bg-2 {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #f30303 0%, #f58080 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #eb0808 0%, #f89482 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
 }
 
 
@@ -1065,8 +1067,8 @@ PADDING LEFT
 }
 
 .overlay-grad-one:after {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
 }
 
 .overlay-grad-three {
@@ -1102,7 +1104,7 @@ PADDING LEFT
 }
 
 .section-heading h2:after {
-    background: rgba(0, 0, 0, 0) url("img/others/line-shape.png") no-repeat scroll 0 0;
+    /*background: rgba(0, 0, 0, 0) url("img/others/line-shape.png") no-repeat scroll 0 0;*/
     content: "";
     height: 11px;
     left: 0;
@@ -1167,17 +1169,21 @@ header {
 }
 
 .navbar.affix {
-    /*background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;*/
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #E83310 0%, #F08F7A 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #F08F7A 0%, #E83310 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
     box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.8);
 }
 
-.navbar-brand>img {
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    width: 100%;
+.navbar-brand {
+    height: 80px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    max-height: 80px;
+    width: auto;
 }
 
 .navbar.affix .navbar-brand>img {
@@ -1188,16 +1194,19 @@ header {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
-    padding: 20px;
+    padding: 0 15px;
+    line-height: 80px; /* igual que el navbar */
 }
 
 .nav>li>a:focus,
 .nav>li>a:hover,
 .nav>.active>a {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    color: #2b323f;
+    color: #F9F9F9 !important;
+    font-weight: 700; /* más fuerte que bold */
+    font-size: 20px; /* ligeramente más grande */
+    letter-spacing: 0.5px; /* mejora legibilidad */
 }
-
 
 /* =====================================
 2.1. HEADER HOME STYLE 2
@@ -1439,8 +1448,8 @@ header {
 }
 
 .single-feature:after {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 2px;
@@ -1702,7 +1711,7 @@ header {
 }
 
 #promo-video-area .overlay-grad-one:after {
-    z-index: 1;
+    /*z-index: 1;*/
 }
 
 #promo-video-area .overlay-grad-two:after {
@@ -1984,8 +1993,8 @@ header {
 }
 
 .social a:after {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    /*background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;*/
     border-radius: 100px;
     content: "";
     height: 100%;
@@ -2209,8 +2218,10 @@ header {
 }
 
 .pricing-footer:after {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    /*background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;*/
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
     content: "";
     height: 1px;
     left: 0;
@@ -2221,9 +2232,10 @@ header {
 }
 
 .pricing-footer:before {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    content: "";
+    /*background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;*/
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
     height: 100%;
     left: 0;
     opacity: 0;
@@ -2247,10 +2259,9 @@ header {
 }
 
 .single-price-table:hover .price-value {
-    color: #00c9fd;
+    color: #000;
 }
 
-.single-price-table:hover .pricing-footer p,
 .single-price-table:hover .pricing-footer a {
     color: #fff;
 }
@@ -2265,7 +2276,7 @@ header {
 }
 
 .faq-content-wrapper:before {
-    background-color: #70798f;
+    background-color: transparent;
     content: "";
     height: calc(100% - 60px);
     left: -40px;
@@ -2275,8 +2286,8 @@ header {
 }
 
 .panel-heading:before {
-    background-color: #fff;
-    border: 1px solid;
+    background-color: transparent;
+    /*border: 1px solid;*/
     border-radius: 50px;
     content: "";
     height: 15px;
@@ -2305,8 +2316,8 @@ header {
 }
 
 .panel:before {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
     content: "";
     height: 100%;
     left: -2px;
@@ -2352,9 +2363,9 @@ header {
 }
 
 .panel-title a:after {
-    border: 1px solid #00c9fd;
+    border: 1px solid #8B0000;
     border-radius: 50px;
-    color: #00c9fd;
+    color: #8B0000;
     content: "";
     font-family: Icofont;
     font-size: 12px;
@@ -2725,9 +2736,9 @@ header {
 ===================================== */
 
 #footer-area {
-    background-color: #2b323f;
+    background-color: #8B0000;
     padding-bottom: 45px;
-    padding-top: 23em;
+    /*padding-top: 23em;*/
 }
 
 #footer-area .social {
@@ -3576,7 +3587,7 @@ header {
 }
 
 #pricing-table-area.home-style-3:before {
-    background: rgba(0, 0, 0, 0) url("img/bg/2.jpg") no-repeat scroll center center / cover;
+    /*background: rgba(0, 0, 0, 0) url("img/bg/2.jpg") no-repeat scroll center center / cover;*/
 }
 
 #app-download-area.home-style-3 {
@@ -3894,7 +3905,7 @@ header {
 35. PRELOADER
 ------------------------------------------*/
 #preloader-wrapper {
-    background: linear-gradient(to right, #eb0808 0%, #eb0808 100%);
+    background: linear-gradient(to right, #8B0000 0%, #8B0000 100%);
     height: 100%;
     left: 0;
     position: fixed;

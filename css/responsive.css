@@ -6,8 +6,8 @@
         background: transparent;
     }
     .affix-top #navigation {
-        background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, rgba(0, 201, 253, 0.9) 0%, rgba(129, 238, 142, 0.9) 100%) repeat scroll 0 0;
-        background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 201, 253, 0.9) 0%, rgba(129, 238, 142, 0.9) 100%) repeat scroll 0 0;
+        background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
+        background: rgba(0, 0, 0, 0) linear-gradient(to right, #8B0000 0%, #8B0000 100%) repeat scroll 0 0;
     }
     .home-style-2 .affix-top #navigation,
     .home-style-2 .navbar.affix {
@@ -54,6 +54,7 @@
         font-size: 16px;
         padding: 8px 20px;
         text-align: center;
+        line-height: 20px;
     }
     #slider-area.home-style-1:before, #slider-area.home-style-1:after {
         border-top: 70px solid transparent;
@@ -676,9 +677,9 @@
         padding: 0 45px;
     }
     #footer-area {
-        background-color: #2b323f;
+        background-color: #8B0000;
         padding-bottom: 40px;
-        padding-top: 21em;
+        /*padding-top: 21em;*/
     }
     .section-heading {
         width: 70%;

@@ -1,0 +1,142 @@
+/* Fondo del intro */
+#intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Video centrado */
+#intro video {
+    width: 50%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Contenido oculto */
+#contenido {
+    display: none;
+    padding: 20px;
+}
+
+/* 🔹 Adaptación para móvil */
+@media (max-width: 768px) {
+    #intro video {
+        width: 90%;
+        /* Más grande en móviles */
+    }
+}
+
+.schedule-text {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.about-app h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about-intro {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* LISTA */
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.about-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8B0000;
+    font-weight: bold;
+}
+
+/* FRASE FINAL */
+.about-highlight {
+    font-style: italic;
+    color: #444;
+    border-left: 3px solid #8B0000;
+    padding-left: 15px;
+}
+
+.app-features-area .feature-details .media-body .text-justify {
+    text-align: justify;
+}
+
+/**
+ Footer styles
+**/
+.social li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: #F9F9F9;
+    color: #0A0A0A;
+    border-radius: 50%;
+    font-size: 18px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.social li a:hover {
+    background: #0A0A0A;
+    color: #F9F9F9;
+    transform: translateY(-3px);
+}
+
+.social li a {
+    background: transparent;
+    color: #F9F9F9;
+    border: 2px solid #F9F9F9;
+}
+
+.social li a:hover {
+    background: #F9F9F9;
+    color: #8B0000;
+}
+
+/**FAQ styles**/
+
+#faq-area .faq-left{
+    padding-right:15px;
+}
+
+#faq-area .faq-right{
+    padding-left:15px;
+}
+
+@media(max-width:768px){
+
+    #faq-area .faq-left{
+        padding-right:0;
+    }
+
+    #faq-area .faq-right{
+        padding-left:0;
+        margin-top:20px;
+    }
+}
