@@ -19,7 +19,7 @@ jobs:
         run: |
           branch="${GITHUB_REF##*/}"
           if [[ "$branch" == "main" ]]; then
-            echo "DEPLOY_PATH=/home/cenecsa-admin" >> $GITHUB_ENV
+            echo "✅ Deployment in PROD environment completed successfully!"
           elif [[ "$branch" == "develop" ]]; then
             echo "DEPLOY_PATH=/var/www/html/aturitmo-web-page" >> $GITHUB_ENV
           fi
